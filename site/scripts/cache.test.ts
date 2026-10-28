@@ -4,7 +4,7 @@
  * Exercises the behaviour that matters on a flaky upstream: successful caching,
  * retry with backoff, stale-on-error, and no retry for permanent 404s.
  */
-import { cacheStats, cachedHtml, clearCache } from "../lib/cache";
+import { cacheStats, cachedHtml, clearCache } from "../lib/cache.ts";
 
 let failures = 0;
 

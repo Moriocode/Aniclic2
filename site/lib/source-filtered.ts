@@ -45,12 +45,6 @@ export function filterListing(listing: Listing, opts: FilterOptions = {}): Listi
       for (const term of excludeTerms) {
         if (termMatchesCard(card, term)) return false;
       }
-      for (const term of opts.excludeTerms ?? []) {
-        if (termMatchesCard(card, term)) return false;
-      }
-      for (const term of opts.excludeTerms ?? []) {
-        if (termMatchesCard(card, term)) return false;
-      }
 
       if (opts.requireAnyTag?.length) {
         const cardTags = card.tags.map((t) => t.toLowerCase());
